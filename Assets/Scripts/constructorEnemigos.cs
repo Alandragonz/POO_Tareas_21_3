@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class constructorEnemigos : MonoBehaviour
 {
-     public int playerId;
+     public int EnemigoId;
    
     
     public int vida;
@@ -13,9 +13,8 @@ public class constructorEnemigos : MonoBehaviour
     private int daño;
 
 
-    public ConstructorPlayer(int id, int vida, int vel){
+    public constructorPlayer(int id, int vida, int vel){
         this.playerId=id;
-        
         this.vida=vida;
         this.velocidad=vel;
     }

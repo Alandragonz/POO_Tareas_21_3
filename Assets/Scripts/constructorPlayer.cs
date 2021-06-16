@@ -14,7 +14,7 @@ public class constructorPlayer
     private bool arma;
 
 
-    public ConstructorPlayer(int id, string n, int vida, float vel){
+    public constructorPlayer(int id, string n, int vida, float vel){
         this.playerId=id;
         this.nombre=n;
         this.vida=vida;

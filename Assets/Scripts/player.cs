@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class player : MonoBehaviour
 {
    public int playerId;
    public string nombre;
@@ -11,10 +11,10 @@ public class Player : MonoBehaviour
    
    private bool arma;
 
-   BaseJugadores bdJugadores;
+   baseJugadores bdJugadores;
 private void Start()
 {
-    bdJugadores=GameObject.FindObjectOfType<BaseJugadores>();
+    bdJugadores=GameObject.FindObjectOfType<baseJugadores>();
     CargarDatos(playerId);
    
 }
