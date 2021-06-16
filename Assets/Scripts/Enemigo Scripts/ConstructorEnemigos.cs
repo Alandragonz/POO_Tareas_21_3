@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public class constructorPlayer
+public class ConstructorEnemigos : MonoBehaviour
 {
-     public int playerId;
-    public string nombre;
+     // Atributos o propiedades
+    public int EnemigoId;
+    
     
     public int vida;
     public float velocidad;
     private Transform posicionActual;
     private int daño;
-    private bool arma;
-
-
-    public constructorPlayer(int id, string n, int vida, float vel){
-        this.playerId=id;
-        this.nombre=n;
+    
+    //Metodo constructor
+    public ConstructorEnemigos(int id, int vida, float vel){
+        this.EnemigoId=id;
+        
         this.vida=vida;
         this.velocidad=vel;
-    }
 
+    }
 }

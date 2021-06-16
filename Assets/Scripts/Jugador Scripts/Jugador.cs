@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class Jugador : MonoBehaviour
 {
    public int playerId;
    public string nombre;
-   public int vida;
+   public float vida;
    public float velocidad;
    
-   private bool arma;
+   
 
-   baseJugadores bdJugadores;
+   BaseJugadores bdJugadores;
 private void Start()
 {
-    bdJugadores=GameObject.FindObjectOfType<baseJugadores>();
+    bdJugadores=GameObject.FindObjectOfType<BaseJugadores>();
     CargarDatos(playerId);
    
 }
